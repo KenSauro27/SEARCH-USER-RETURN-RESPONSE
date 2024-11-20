@@ -1,0 +1,249 @@
+/* General Body Styles */
+body {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FFF6E5; /* Light off-white to complement orange */
+    color: #333;
+}
+
+/* Header Styles */
+h1 {
+    text-align: center;
+    color: #219B9D; /* Updated Blue */
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* Search Bar and Button */
+.search-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+    gap: 10px;
+}
+
+.search-container input[type="text"] {
+    padding: 12px;
+    font-size: 0.9em;
+    border: 1px solid #ccc;
+    border-radius: 25px; /* Rounded corners */
+    width: 300px;
+    background-color: #FFFAF0; /* Subtle cream */
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15); /* Soft shadow */
+    transition: box-shadow 0.3s ease;
+}
+
+.search-container input[type="text"]:focus {
+    outline: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow on focus */
+}
+
+.search-container button {
+    background-color: #FF8000; /* Blue */
+    color: white;
+    padding: 12px 20px;
+    font-size: 0.9em;
+    border: none;
+    border-radius: 25px; /* Rounded corners */
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15); /* Soft shadow */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.search-container button:hover {
+    background-color: #197D7F;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow on hover */
+}
+
+
+/* Insert Button */
+.insert-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.insert-container a {
+    display: inline-block;
+    padding: 12px 20px;
+    background-color: #219B9D; /* Blue */
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.insert-container a:hover {
+    background-color: #197D7F;
+}
+
+/* Clear Search Link */
+.clear-search {
+    display: block;
+    margin: 10px auto;
+    text-align: center;
+    font-size: 1em;
+    color: #FF8000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.clear-search:hover {
+    text-decoration: underline;
+}
+
+/* Form Styles */
+form {
+    background-color: #FFF;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    max-width: 650px;
+    margin: 20px auto;
+    border: 1px solid #FFE0B3; /* Light border for distinction */
+}
+
+form p {
+    margin-bottom: 15px;
+    font-size: 1em;
+}
+
+form input, form button {
+    width: 100%;
+    padding: 12px;
+    font-size: 1em;
+    margin-top: 6px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #FF8000; /* Orange */
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #E67300;
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: separate;
+    border-spacing: 0 10px;
+    background-color: transparent;
+}
+
+table th, table td {
+    padding: 15px;
+    text-align: left;
+    font-size: 1em;
+    border: none;
+}
+
+table th {
+    background-color: #333; /* Blue */
+    color: white;
+    text-transform: uppercase;
+    border-radius: 8px 8px 0 0;
+}
+
+table td {
+    background-color: #FFFAF0; /* Subtle cream for rows */
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Button Styles */
+table .btn {
+    display: inline-block;
+    padding: 8px 12px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    font-size: 0.9em;
+    font-weight: bold;
+}
+
+table .btn-edit {
+    background-color: #219B9D;
+}
+
+table .btn-edit:hover {
+    background-color: #197D7F;
+}
+
+table .btn-delete {
+    background-color: #FF5733;
+}
+
+table .btn-delete:hover {
+    background-color: #E04725;
+}
+
+/* Message Styles */
+.message {
+    color: #fff;
+    padding: 12px;
+    text-align: center;
+    margin: 20px 0;
+    border-radius: 5px;
+    font-size: 1.2em;
+}
+
+.message.success {
+    background-color: #197D7F; 
+}
+
+.message.error {
+    background-color: #E53935; 
+}
+
+/* Page Layout */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #FF8000; /* Orange */
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 1em;
+    margin-top: 30px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    form {
+        padding: 15px;
+    }
+
+    table th, table td {
+        font-size: 0.9em;
+    }
+
+    .search-container input[type="text"] {
+        width: 180px;
+    }
+}
